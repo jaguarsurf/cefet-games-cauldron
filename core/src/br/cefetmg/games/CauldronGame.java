@@ -102,6 +102,7 @@ public class CauldronGame extends ApplicationAdapter {
         fogueira = new ModelInstance(assets.get("fogueira.obj", Model.class));
         fogueira.transform.setToTranslation(0, -0.08f, 0);
         sopa = caldeirao.getNode("topoDaSopa");
+        sopa.translation.y = 0.015f;
 
         // instancia, configura e dá início ao efeito de fogo
         fogo = ((ParticleEffect) assets.get("fogo.pfx")).copy();
